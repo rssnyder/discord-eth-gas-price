@@ -1,0 +1,16 @@
+[Unit]
+Description=discord-eth-gas-price
+Wants=basic.target
+After=basic.target network.target
+Before=sshd.service
+
+[Service]
+SyslogIdentifier=discord-eth-gas-price
+StandardOutput=syslog
+StandardError=syslog
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/etc/discord-eth-gas-price/discord-eth-gas-price -token ''
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
