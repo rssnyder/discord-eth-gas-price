@@ -1,4 +1,7 @@
 # discord-eth-gas-price
+
+⚠️This project has been merged with [discord stock tickers](https://github.com/rssnyder/discord-stock-ticker).⚠️
+
 a discord bot to display the current reccomended gas amount for ethereum transactions
 
 ![Live Demo Gif](https://s3.cloud.rileysnyder.org/public/assets/ethgas.gif)
